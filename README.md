@@ -1,1 +1,1 @@
-# Jurso Talento Digital - full stack java
+# Curso Talento Digital - full stack java
