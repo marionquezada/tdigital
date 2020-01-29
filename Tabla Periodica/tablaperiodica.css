@@ -16,6 +16,7 @@
 }
 
 .item{
+  color: #0339A6;
   width: 30px;
   height: 40px;
   font-family: arial;
@@ -37,22 +38,23 @@
   background-color: yellow;
 }
 .green{
-  background-color: green;
+  background-color: #62D918;
 }
 
 .marco{ color:red;}
 
 .espacio1{ 
-  grid-column:3/19;
+  grid-column:span 16;
   border:none;
 }
 .espacio2{
-  grid-column:4/14;
+  grid-column:span 10;
   border:none;
 }
 
 .junto1{
-  grid-column:1/4;
+  width: 120px;
+  grid-column: span 3;
   color:red;
   background-color: white;
   border:none;
@@ -60,7 +62,7 @@
 }
 
 .espacio{
-  grid-column:18/20;
+  grid-column:span 2;
   border:none;  
 }
 .colum-4{
@@ -70,4 +72,7 @@
 b{
 	font-size: 18px;
   text-align: left;
+}
+span{
+
 }
