@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>CSS - Algoritmos 2 - Actividad</title>
+		<script type="text/javascript">
+
+		//Ejercicio 1
+
+		function devuelve(){
+			y=[];
+			for (var i=1; i <=255; i++) {
+				y.push(i);
+			}
+			return y;
+		}
+		console.log(devuelve());
+
+		//Ejercicio 2
+		function sumapar(){
+			var sum=0;
+			for (var i=1; i<=1000 ; i++) {
+				if (i%2==0) {
+					sum=sum+i;
+				}
+			}
+			return sum;
+		}
+		console.log(sumapar());
+
+		//Ejercicio 3
+		function sumaimpar(){
+			var sum=0;
+		 	for (var i=1; i<=10 ; i++) {
+		 		if (i%2==1) {
+					sum=sum+i;
+		 		}
+		 	}
+		 	return sum;
+		 }
+		console.log(sumaimpar());
+
+		//Ejercicio 4
+		function suma(x){
+			var sum=0;
+			for (var i=0; i<x.length; i++) {
+				sum=sum + x[i];
+			}
+			return sum;
+		}
+		x=[2,3,-5];
+		console.log(suma(x));
+
+
+
+
+
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
