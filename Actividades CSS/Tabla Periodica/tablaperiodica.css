@@ -1,0 +1,72 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+.container{
+  display: inline-grid;
+  grid-template-columns:50px repeat(18,50px); 
+  grid-template-rows: 45px;
+  align-items: center;
+  justify-items:center;
+  grid-gap:3px;
+  margin:10px;
+
+}
+
+.item{
+  color: #0339A6;
+  width: 30px;
+  height: 40px;
+  font-family: arial;
+  font-size: 10px;
+  text-align: center;
+  border: 1px ridge gray;
+  justify-items:center;
+  padding: 10px;
+}
+
+.celeste{
+
+  background-color:#7DB1E5;
+}
+.pink{
+  background-color: pink;
+}
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: #62D918;
+}
+
+.marco{ color:red;}
+
+.espacio1{ 
+  grid-column:span 16;
+  border:none;
+}
+.espacio2{
+  grid-column:span 10;
+  border:none;
+}
+
+.junto1{
+  width: 120px;
+  grid-column: span 3;
+  color:red;
+  background-color: white;
+  border:none;
+  justify-items:center;
+}
+
+.espacio{
+  grid-column:span 2;
+  border:none;  
+}
+
+b{
+	font-size: 18px;
+  text-align: left;
+}

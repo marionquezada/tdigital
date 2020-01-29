@@ -1,0 +1,119 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#up{
+	width: 810px;
+	height: 60px;
+	position: relative;
+}
+
+h1{
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+h2{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	margin-top: 20px;
+}
+
+
+#wrapper{
+	 width: 810px;
+	 background-color: #705F7C;
+	 padding: 10px;
+}
+#image{
+	display: inline-block;
+	vertical-align: top;
+}
+#img1{
+	margin-left: 6px;
+	 width:350px;
+	 height:250px;
+	 border: #CCC2DB 5px solid;
+}
+
+#about{
+	width: 416px;
+	height: 260px;
+	display: inline-block;
+	background-color: #CCC2DB;
+	margin-left: 10px;
+}
+#p1{
+	margin: 10px;
+}
+
+#p2{
+	margin: 10px;
+	width: 220px;
+	height: 170px;
+}
+
+a{
+	margin-left: 10px;
+	color: black;
+}
+
+
+h3{
+	background-color:#8D8AA6; 
+	color: white;
+	padding: 10px;
+}
+
+#lamode{
+	width: 250px;
+	height: 600px;
+	background-color: #CCC2DB;
+	display: inline-block;
+	margin: 8px;
+
+}
+
+#img2{
+	 width:250px;
+	 height:180px;
+}
+
+
+#im{
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	margin: 5px;
+}
+
+button{
+	background-color: #2C7F7A; /*green*/
+	color:white;
+	font-size: 15px;
+	border: none;
+	padding: 10px 28px;
+	border-radius: 12px;
+	margin-bottom: 10px;
+}
+
+#im2{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+
+
+}
+
+#fin{
+	width: 810px;
+	height: 100px;
+	display: inline-block;
+
+}
+#fin a{
+	margin: 0;
+}
