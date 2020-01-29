@@ -10,7 +10,7 @@
   grid-template-rows: 45px;
   align-items: center;
   justify-items:center;
-  grid-column-gap:1px;
+  grid-gap:3px;
   margin:10px;
 
 }
@@ -65,14 +65,8 @@
   grid-column:span 2;
   border:none;  
 }
-.colum-4{
-  grid-column-gap:10px;
-}
 
 b{
 	font-size: 18px;
   text-align: left;
-}
-span{
-
 }
