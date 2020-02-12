@@ -11,13 +11,11 @@
     			var gato;
     			var ninja;
                 $('img').click(function() {
-    			  console.log('data-alt-src value is', $(this).attr('data-alt-src'));
     			  gato = $(this).attr('data-alt-src');
     			  ninja = $(this).attr('src');
-    			  console.log(gato);
     			  $(this).attr('src', gato);
     			  $(this).attr("data-alt-src", ninja);
-    			  return false
+    			 
     			});
             });
 
