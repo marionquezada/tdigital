@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon Marion</title>
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+	<script type="text/javascript">
+		$(document).ready(function() {
+            for (var i = 1; i <= 151; i++) {
+                $('#pokemon').append("<img src='http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/"+ i +".png'/>");
+            }
+
+        });
+	</script>
+	<style type="text/css">
+		#pokemon{
+			width: 970px;
+			border: 8px double yellow;
+		}
+		h3{
+			text-align: center;
+			font-size: 30px;
+		}
+	</style>
+
+</head>
+<body>
+	   <div id="pokemon">
+	   	<h3>Pokemones 1ra Generación</h3>
+	   </div> 
+
+</body>
+</html>
