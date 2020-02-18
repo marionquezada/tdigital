@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokedex</title>
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+	<script type="text/javascript">
+
+		 
+
+		$(document).ready(function() {
+            for (var i = 1; i <= 151; i++) {
+               $('#pokemon').append("<img id='"+ i +"' src='http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/"+ i +".png'/>");
+  			}
+
+                 $('img').click(function(){
+                 	$('img.cambioPokemon').removeClass("cambioPokemon");
+                 	$(this).addClass("cambioPokemon"); 
+                 	$("#pokedex").css({
+                 		'background-color': '#FFFC78',//url(pokebola.jpg)
+                 		'font-size':'20px',
+                 		'border-radius':'40px',
+                 		'border':'4px solid #3A85A5',
+                 	 });
+                 	 var id=this.id;
+                 	$.get("https://pokeapi.co/api/v2/pokemon/"+id, function(res) {
+                    var html_str = "";
+                    html_str += "<h2>"+ res.name+"</h2>"; 
+                    html_str+="<img src='"+res.sprites.front_default+"'</img>"; 
+                    html_str += "<ul>"; 
+                    html_str+="<li> <b>Height: </b>"+ res.height+"</li>";
+                    html_str+="<li> <b>Weight: </b>"+ res.weight+"</li>";
+                    for(var i = 0; i < res.types.length; i++) {
+                        html_str += "<li> <b>Type: </b>" + res.types[i].type.name + "</li>";
+                    }
+
+                    html_str += "</ul>";
+                    $("#pokedex").html(html_str);
+                }, "json");
+                 });
+            
+            
+
+        });
+	</script>
+	<style type="text/css">
+		#pokemon{
+			width: 970px;
+			border: 8px double #0EB200;
+			display: inline-block;
+			vertical-align: top;
+		}
+		#pokemon #imagen{
+			width: 400px;
+			display:block;
+			margin:auto;
+		}
+		#pokedex{
+			position: fixed;
+			width: 250px;
+			height: 400px;
+			margin-left: 30px;
+			display: inline-block;	
+		}
+
+		h2{
+			text-align: center;
+			color:black;
+		}
+		#pokedex img{
+			image-rendering: crisp-edges;
+			display:block;
+			margin:auto;
+			width: 200px;
+			height: 200px;
+
+
+		}
+
+		.cambioPokemon{
+			background-color: #FFFC78;
+			border-radius: 45px;
+		}
+		
+		
+	</style>
+
+</head>
+<body>
+	   <div id="pokemon">
+	   		<div><img id="imagen"src="pokemon.png"></div>
+	   </div> 
+	   <div id="pokedex"></div>
+
+</body>
+</html>
