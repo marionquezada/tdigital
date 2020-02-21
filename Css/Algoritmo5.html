@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8"> 
+		<title>CSS - Algoritmos 2 - Actividad</title>
+		
+	</head>
+	<body>
+		<script>
+//Configura un array para que los valores negativos se transformen en 0. Por ejemplo, resetNegativos([1,2,-1,-3]) debiera dar como resultado [1,2,0,0].
+
+		function cambio(x){
+			
+			for(i=0;i<x.length;i++){
+				if (x[i]<0) {
+					x[i]=0;
+				}
+			}
+			return x;
+		}
+		x=cambio([2,-1,-9,7]);
+        console.log(x);
+
+//Dado un array, mueve todos los valores un espacio de derecha a izquierda eliminando el primer valor y dejando un 0 para el último valor. Por ejemplo, moverAdelante([1,2,3]) debiera dar como resultado [2,3,0].
+
+function mueve(x){
+
+	for (var i=0; i < x.length; i++) {
+		x[i]=x[i+1];
+
+		if(x[i+1] == undefined || NaN || null){
+			x[i]=0;
+		}
+	}
+	return x;
+}
+var res = mueve([2,7,9,12]);
+console.log(res);
+
+//Configura un array para que el resultado sean los valores en el orden contrario. Por ejemplo, returnReverso([1,2,3]) debe dar [3,2,1].
+
+function reverso(x){
+	var y=[];
+	for (var i=x.length-1; i>=0; i--) {
+		y.push(x[i]);
+	}
+	return y;
+}
+var res=reverso([1,2,3,4]);
+console.log(res);
+
+
+//Crea una función que cambie un array repitiendo sus valores originales (manteniendo el mismo orden). Por ejemplo, repetirValores([4,”Ulysses”, 42, false]) debiera dar [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].
+
+function repetir(x){
+	var y=[];
+	for (var i=0; i<x.length; i++) {
+		y.push(x[i]);
+		y.push(x[i]);
+	}
+	return y;
+}
+
+var res= repetir([2,3,4,"perro"]);
+console.log(res);
+
+
+	</script>
+	</body>
+</html>
+

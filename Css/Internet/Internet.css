@@ -1,0 +1,126 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+h1{
+	background-color:#064995;
+	width: 970px;
+	padding: 10px;
+	color:white;
+	font-family: sans-serif;
+}
+.izq{
+	width: 250px;
+	height: 700px;
+	display: inline-block;
+	vertical-align: top;
+}
+.izq #uno {
+	font-size: 18px;
+	font-weight: bold;
+	margin:10px;
+	margin-top:30px;
+}
+#uno span{
+	color:red;
+}
+#dos span{
+	color: blue;
+}
+.izq #dos{
+	font-size: 16px;
+	font-weight:bold;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+.izq p{
+	width: 200px;
+}
+
+button{
+	background-color: orange;
+	padding: 7px;
+	font-size: 20px;
+	border-radius: 12px;
+	width: 220px;
+	color:white;
+}
+.izq hr{
+	width: 220px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.ninja {
+	width: 220px;
+	height: 350px;
+	background-image: url("images/ad_background.png");
+}
+
+#ninjaimg{
+	width: 110px;
+	height: 140px;
+	display: block;
+	margin: auto;
+}
+.ninja button{
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: lightblue;
+	padding: 7px;
+	font-size: 20px;
+	border-radius: 12px;
+	width: 180px;
+	color:white;
+}
+.ninja p{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+.der{
+	width: 735px;
+	height: 700px;
+	display: inline-block;
+}
+.arribaizq{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 40px;
+}
+.arribader{
+	display: inline-block;
+	margin-left: 360px;
+}
+.arribader span{
+	color: #00B8BF;
+	font-weight: bold;
+	font-size: 25px;
+}
+.der hr{
+	margin: 20px;
+}
+.der img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+.der .parrafo{
+	display: inline-block;
+	text-align: center;
+}
+h2{
+	color: #064995;
+}
+span{
+	color: #00B8BF;
+}
+.der #server{
+	width: 300px;
+	height: 100px;
+	margin-left: 180px;
+}
+.abajo{
+	width: 650px;
+	margin-left: 60px;
+}

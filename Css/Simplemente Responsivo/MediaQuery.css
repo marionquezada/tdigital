@@ -1,0 +1,54 @@
+
+
+.Contenido .Titulo{
+	background-color: #B7AEAD;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+.Contenido .Parrafo1{
+	background-color: #BFBFBF;
+	min-height: 50px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.Contenido .Parrafo2 {
+	background-color: #FFFC78;
+	min-height: 20px;
+	padding: 10px;
+}
+
+
+@media only screen and (max-width: 480px){
+    .Phone {
+        display: block;
+     }
+     .Tablet{
+     	display: none;     	
+     }
+     .Desktop{
+     	display: none;
+     }
+}
+@media only screen and (min-width: 481px){
+   .Phone {
+        display: none;
+     }
+     .Tablet{
+     	display: block;     	
+     }
+     .Desktop{
+     	display: none;
+     }
+}
+@media only screen and (min-width: 1024px){
+     .Phone {
+        display: none;
+     }
+     .Tablet{
+     	display: none;     	
+     }
+     .Desktop{
+     	display: block;
+     }
+}
