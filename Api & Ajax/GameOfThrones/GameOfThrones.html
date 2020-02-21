@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Of Thrones</title>
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$('img').click(function(){
+				var id=this.id;
+				$.get("https://www.anapioficeandfire.com/api/houses/"+id, function(res) {
+					var game="";
+					game+="<p>Nombre: "+res.name+"</p>";
+					game+="<p>Títulos: "+res.titles+"</p>";
+
+
+                    $("#info").html(game);
+                }, "json");
+                 
+			});
+
+		});
+
+
+	</script>
+
+	<style type="text/css">
+		div{
+			display: inline-block;
+		}
+		img{
+			width: 300px;
+			height: 200px;
+			margin: 10px 10px;
+		}
+		h1{
+			font-size: 40px;
+			text-align: center;
+			font-family: 'Cinzel Decorative' ;
+		}
+		#info{
+			width: 600px;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Game of Thrones</h1>
+	<div><img id="362"src="stark.jpg"></div><!--362 -->
+	<div><img id="378"src="targaryen.jpg"></div><!--378 -->
+	<div><img id="229"src="lannister.jpg"></div><!--229-->
+	<div><img id="16"src="baratheon.png"></div><!-- 16 --> 
+	<div id="info"></div>
+<!-- 
+arryn=6
+baratheon=16
+Greyjoy=169
+lannister=229
+martell=285
+stark=362
+targaryen=378
+tully=395
+Tyrell=398
+-->
+
+</body>
+</html>
