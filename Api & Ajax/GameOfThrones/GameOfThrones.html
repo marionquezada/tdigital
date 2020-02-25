@@ -11,8 +11,8 @@
 				var id=this.id;
 				$.get("https://www.anapioficeandfire.com/api/houses/"+id, function(res) {
 					var game="";
-					game+="<p>Nombre: "+res.name+"</p>";
-					game+="<p>Títulos: "+res.titles+"</p>";
+					game+="<p><b>Nombre: </b>"+res.name+"</p>";
+					game+="<p><b>Títulos: </b>"+res.titles+"</p>";
 
 
                     $("#info").html(game);
@@ -26,13 +26,14 @@
 	</script>
 
 	<style type="text/css">
-		div{
+		.imagen{
 			display: inline-block;
 		}
 		img{
 			width: 300px;
 			height: 200px;
 			margin: 10px 10px;
+			border: 2px solid white;
 		}
 		h1{
 			font-size: 40px;
@@ -40,18 +41,33 @@
 			font-family: 'Cinzel Decorative' ;
 		}
 		#info{
-			width: 600px;
-			height: 500px;
+			width: 300px;
+			height: 200px;
+			font-family: 'Cinzel Decorative' ;
+			font-size: 20px;
+			text-align: center;
+			margin-left: auto;
+  			margin-right: auto;
+  			padding: 5px;
+  			color: white;
+		}
+		
+		#fondo{
+			background-image: url("fondo2.jpg");
+			height: 650px;
+			margin: none;
 		}
 	</style>
 </head>
 <body>
-	<h1>Game of Thrones</h1>
-	<div><img id="362"src="stark.jpg"></div><!--362 -->
-	<div><img id="378"src="targaryen.jpg"></div><!--378 -->
-	<div><img id="229"src="lannister.jpg"></div><!--229-->
-	<div><img id="16"src="baratheon.png"></div><!-- 16 --> 
-	<div id="info"></div>
+	<div id="fondo">
+		<h1>Game of Thrones</h1>
+		<div class="imagen"><img id="362"src="stark.jpg"></div><!--362 -->
+		<div class="imagen"><img id="378"src="targaryen.jpg"></div><!--378 -->
+		<div class="imagen"><img id="229"src="lannister.jpg"></div><!--229-->
+		<div class="imagen"><img id="16"src="baratheon.png"></div><!-- 16 --> 
+		<div id="info"></div>
+	</div>
 <!-- 
 arryn=6
 baratheon=16
